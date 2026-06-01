@@ -4,13 +4,13 @@
 <meta charset="UTF-8">
 <meta name="robots" content="noindex, nofollow">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Shenzhen · Dongguan Trip Report | 2026.05.25–26</title>
+<title>Shenzhen Trip Report</title>
 <style>
   * { box-sizing: border-box; margin: 0; padding: 0; }
   html, body { height: 100%; }
   body {
-    font-family: -apple-system, "PingFang SC", "Hiragino Sans GB", "Hiragino Sans", "Yu Gothic", "Source Han Sans SC", "Microsoft YaHei", sans-serif;
-    background: linear-gradient(135deg, #1a2a3a 0%, #2c3e50 55%, #34495e 100%);
+    font-family: -apple-system, "PingFang SC", "Hiragino Sans GB", "Hiragino Sans", "Yu Gothic", "Source Han Sans SC", sans-serif;
+    background: linear-gradient(135deg, #1a2a3a 0%, #2c3e50 55%, #3a3050 100%);
     color: #fff;
     display: flex;
     align-items: center;
@@ -29,151 +29,181 @@
       radial-gradient(circle at 80% 75%, rgba(201,169,107,.12) 0%, transparent 40%);
     pointer-events: none;
   }
-  .container { position: relative; max-width: 720px; text-align: center; }
-  .eyebrow {
-    font-size: 12px;
-    letter-spacing: 0.5em;
-    color: #c9a96b;
-    margin-bottom: 24px;
-    text-transform: uppercase;
-    font-weight: 500;
+  .gate {
+    position: relative;
+    max-width: 440px;
+    width: 100%;
+    text-align: center;
   }
-  h1 {
-    font-family: "Songti SC", "YuMincho", "Hiragino Mincho ProN", "Source Han Serif SC", Georgia, serif;
-    font-size: clamp(28px, 4.4vw, 44px);
-    font-weight: 600;
-    line-height: 1.25;
+  .lock-icon {
+    font-size: 48px;
+    color: #c9a96b;
     margin-bottom: 18px;
   }
-  .subtitle {
-    font-size: clamp(14px, 1.4vw, 17px);
-    color: rgba(255,255,255,.72);
-    margin-bottom: 50px;
-    line-height: 1.7;
-  }
-  .report-section {
-    margin-bottom: 36px;
-    text-align: left;
-  }
-  .report-title {
-    font-family: "Songti SC", "YuMincho", Georgia, serif;
-    font-size: 20px;
+  .gate h1 {
+    font-family: "Songti SC", "YuMincho", "Hiragino Mincho ProN", Georgia, serif;
+    font-size: 26px;
     font-weight: 600;
-    color: #c9a96b;
-    margin-bottom: 6px;
+    margin-bottom: 10px;
     letter-spacing: 0.05em;
   }
-  .report-meta {
-    font-size: 13px;
-    color: rgba(255,255,255,.58);
-    margin-bottom: 16px;
-    line-height: 1.55;
+  .gate .subtitle {
+    font-size: 14px;
+    color: rgba(255,255,255,.6);
+    margin-bottom: 32px;
+    line-height: 1.6;
   }
-  .picker { display: flex; flex-direction: column; gap: 10px; }
-  .picker a {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 22px 30px;
-    background: rgba(255,255,255,.07);
-    border: 1px solid rgba(255,255,255,.18);
-    border-radius: 12px;
-    text-decoration: none;
+  .gate input[type="password"] {
+    width: 100%;
+    padding: 14px 18px;
+    font-size: 15px;
+    font-family: inherit;
     color: #fff;
-    transition: all 0.25s;
-    backdrop-filter: saturate(180%) blur(10px);
-    -webkit-backdrop-filter: saturate(180%) blur(10px);
+    background: rgba(255,255,255,.08);
+    border: 1px solid rgba(255,255,255,.2);
+    border-radius: 10px;
+    outline: none;
+    margin-bottom: 14px;
+    transition: all .2s;
   }
-  .picker a:hover {
-    background: rgba(201,123,90,.18);
+  .gate input[type="password"]:focus {
     border-color: #c97b5a;
-    transform: translateY(-2px);
+    background: rgba(255,255,255,.12);
   }
-  .picker .lang {
-    font-family: "Songti SC", "YuMincho", Georgia, serif;
-    font-size: 22px;
+  .gate button {
+    width: 100%;
+    padding: 14px;
+    font-size: 14px;
     font-weight: 600;
-    letter-spacing: 0.05em;
-  }
-  .picker .label {
-    font-size: 12px;
-    letter-spacing: 0.3em;
-    color: #c9a96b;
+    letter-spacing: 0.15em;
+    color: #fff;
+    background: linear-gradient(135deg, #c97b5a 0%, #a35d3f 100%);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all .2s;
     text-transform: uppercase;
   }
-  .picker .arrow {
-    font-size: 22px;
-    color: rgba(255,255,255,.5);
-    transition: all 0.25s;
-  }
-  .picker a:hover .arrow {
-    color: #c97b5a;
-    transform: translateX(4px);
-  }
-  .meta {
-    margin-top: 50px;
-    padding-top: 28px;
-    border-top: 1px solid rgba(255,255,255,.15);
+  .gate button:hover { transform: translateY(-1px); box-shadow: 0 6px 20px rgba(201,123,90,.4); }
+  .gate button:disabled { opacity: 0.5; cursor: wait; }
+  .error {
+    margin-top: 16px;
+    padding: 10px 14px;
+    background: rgba(220, 80, 80, .15);
+    border: 1px solid rgba(220, 80, 80, .35);
+    border-radius: 8px;
+    color: #ffb8b8;
     font-size: 13px;
-    color: rgba(255,255,255,.45);
-    letter-spacing: 0.05em;
+    display: none;
   }
-  .meta .signature {
-    font-family: "Songti SC", "YuMincho", Georgia, serif;
-    color: #c9a96b;
-    font-size: 15px;
-    margin-bottom: 6px;
+  .error.show { display: block; }
+  .meta {
+    margin-top: 40px;
+    font-size: 11px;
+    color: rgba(255,255,255,.35);
+    letter-spacing: 0.1em;
   }
 </style>
 </head>
 <body>
-  <div class="container">
-    <div class="eyebrow">Shenzhen · Dongguan · Guangzhou · 2026</div>
-    <h1>2026 春深 · 广东行<br>企业访问 &amp; 大学访问 两份报告</h1>
-    <p class="subtitle">2026 年 5 月 25–29 日 · 共 5 天 · 5 家企业 + 3 所大学 / 学者<br>请选择要查看的报告 + 语言</p>
+<div class="gate" id="gate">
+  <div class="lock-icon">🔒</div>
+  <h1>受保护的报告</h1>
+  <p class="subtitle">Protected Report · 保護されたレポート<br>请输入访问密码 / Enter access password</p>
+  <form id="pw-form" autocomplete="off">
+    <input type="password" id="pw" placeholder="访问密码 / Access password" autofocus required>
+    <button type="submit" id="submit-btn">UNLOCK · 解锁</button>
+  </form>
+  <div class="error" id="err">密码错误 / Wrong password</div>
+  <div class="meta">AES-256-GCM · Client-side decryption</div>
+</div>
 
-    <div class="report-section">
-      <div class="report-title">① 企业访问报告 · Company Visits</div>
-      <div class="report-meta">2026.05.25–26 · 深圳南山 · 东莞 · STARLINK · Anker · Anycubic · Vivaia · 东莞工厂群</div>
-      <div class="picker">
-        <a href="Trip-Report-CN.html">
-          <div><div class="label">Chinese · Original</div><div class="lang">中　文</div></div>
-          <span class="arrow">→</span>
-        </a>
-        <a href="Trip-Report-JA.html">
-          <div><div class="label">Japanese · である調</div><div class="lang">日本語</div></div>
-          <span class="arrow">→</span>
-        </a>
-        <a href="Trip-Report-EN.html">
-          <div><div class="label">English · Professional</div><div class="lang">English</div></div>
-          <span class="arrow">→</span>
-        </a>
-      </div>
-    </div>
+<script>
+const PAYLOAD = {"salt": "+pvdDyiSbuRaLIhBfEDgGA==", "iv": "UR9zB+xe+vpdGboH", "ciphertext": "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"};
+const STORAGE_KEY = 'sztrip_key_' + PAYLOAD.salt.substring(0, 8);
 
-    <div class="report-section">
-      <div class="report-title">② 大学访问报告 · University Visits</div>
-      <div class="report-meta">2026.05.27–29 · 深圳 · 广州 · 南科大 · 港科广 · 清华喻纯教授专题报告</div>
-      <div class="picker">
-        <a href="university/University-Report-CN.html">
-          <div><div class="label">Chinese · Original</div><div class="lang">中　文</div></div>
-          <span class="arrow">→</span>
-        </a>
-        <a href="university/University-Report-JA.html">
-          <div><div class="label">Japanese · である調</div><div class="lang">日本語</div></div>
-          <span class="arrow">→</span>
-        </a>
-        <a href="university/University-Report-EN.html">
-          <div><div class="label">English · Professional</div><div class="lang">English</div></div>
-          <span class="arrow">→</span>
-        </a>
-      </div>
-    </div>
+function b64decode(s) {
+  const bin = atob(s);
+  const arr = new Uint8Array(bin.length);
+  for (let i = 0; i < bin.length; i++) arr[i] = bin.charCodeAt(i);
+  return arr;
+}
 
-    <div class="meta">
-      <div class="signature">Li Jingjing · 筑波大学 SLIS · Digital Nature Group</div>
-      <div>3 languages · Each ~7.5 MB · Self-contained · Optimized for desktop &amp; mobile</div>
-    </div>
-  </div>
+async function deriveKey(password, salt) {
+  const enc = new TextEncoder();
+  const passKey = await crypto.subtle.importKey(
+    'raw', enc.encode(password), 'PBKDF2', false, ['deriveKey']
+  );
+  return crypto.subtle.deriveKey(
+    { name: 'PBKDF2', salt, iterations: 600000, hash: 'SHA-256' },
+    passKey,
+    { name: 'AES-GCM', length: 256 },
+    true,
+    ['decrypt']
+  );
+}
+
+async function tryDecrypt(key) {
+  const iv = b64decode(PAYLOAD.iv);
+  const ct = b64decode(PAYLOAD.ciphertext);
+  const plain = await crypto.subtle.decrypt({ name: 'AES-GCM', iv }, key, ct);
+  return new TextDecoder().decode(plain);
+}
+
+function installDecrypted(html) {
+  // Replace the entire document. Use document.open/write/close so scripts re-execute.
+  document.open();
+  document.write(html);
+  document.close();
+}
+
+async function attemptWithStoredKey() {
+  // sessionStorage persists across same-tab navigation but clears on tab close.
+  // Use localStorage instead so cross-page navigation (and refresh) work seamlessly.
+  const stored = localStorage.getItem(STORAGE_KEY);
+  if (!stored) return false;
+  try {
+    const rawKey = b64decode(stored);
+    const key = await crypto.subtle.importKey(
+      'raw', rawKey, { name: 'AES-GCM' }, false, ['decrypt']
+    );
+    const html = await tryDecrypt(key);
+    installDecrypted(html);
+    return true;
+  } catch (e) {
+    localStorage.removeItem(STORAGE_KEY);
+    return false;
+  }
+}
+
+document.getElementById('pw-form').addEventListener('submit', async (e) => {
+  e.preventDefault();
+  const pw = document.getElementById('pw').value;
+  const btn = document.getElementById('submit-btn');
+  const err = document.getElementById('err');
+  err.classList.remove('show');
+  btn.disabled = true;
+  btn.textContent = 'UNLOCKING…';
+  try {
+    const salt = b64decode(PAYLOAD.salt);
+    const key = await deriveKey(pw, salt);
+    const html = await tryDecrypt(key);
+    // Save raw key to localStorage so subsequent pages don't need re-derivation.
+    const rawKey = await crypto.subtle.exportKey('raw', key);
+    const rawB64 = btoa(String.fromCharCode.apply(null, new Uint8Array(rawKey)));
+    localStorage.setItem(STORAGE_KEY, rawB64);
+    installDecrypted(html);
+  } catch (e) {
+    err.classList.add('show');
+    btn.disabled = false;
+    btn.textContent = 'UNLOCK · 解锁';
+    document.getElementById('pw').focus();
+    document.getElementById('pw').select();
+  }
+});
+
+// Auto-attempt with stored key on load
+attemptWithStoredKey();
+</script>
 </body>
 </html>

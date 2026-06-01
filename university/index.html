@@ -4,12 +4,12 @@
 <meta charset="UTF-8">
 <meta name="robots" content="noindex, nofollow">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>University Visit Report | SUSTech · HKUST-GZ · Yu Chun · 2026.05.27–29</title>
+<title>University Visit Report</title>
 <style>
   * { box-sizing: border-box; margin: 0; padding: 0; }
   html, body { height: 100%; }
   body {
-    font-family: -apple-system, "PingFang SC", "Hiragino Sans GB", "Hiragino Sans", "Yu Gothic", "Source Han Sans SC", "Microsoft YaHei", sans-serif;
+    font-family: -apple-system, "PingFang SC", "Hiragino Sans GB", "Hiragino Sans", "Yu Gothic", "Source Han Sans SC", sans-serif;
     background: linear-gradient(135deg, #1a2a3a 0%, #2c3e50 55%, #3a3050 100%);
     color: #fff;
     display: flex;
@@ -25,128 +25,185 @@
     position: absolute;
     inset: 0;
     background:
-      radial-gradient(circle at 15% 25%, rgba(110,77,110,.28) 0%, transparent 35%),
-      radial-gradient(circle at 80% 75%, rgba(201,169,107,.14) 0%, transparent 40%);
+      radial-gradient(circle at 15% 25%, rgba(201,123,90,.18) 0%, transparent 35%),
+      radial-gradient(circle at 80% 75%, rgba(201,169,107,.12) 0%, transparent 40%);
     pointer-events: none;
   }
-  .container { position: relative; max-width: 720px; text-align: center; }
-  .eyebrow {
-    font-size: 12px;
-    letter-spacing: 0.5em;
-    color: #c9a96b;
-    margin-bottom: 24px;
-    text-transform: uppercase;
-    font-weight: 500;
+  .gate {
+    position: relative;
+    max-width: 440px;
+    width: 100%;
+    text-align: center;
   }
-  .back {
-    display: inline-block;
+  .lock-icon {
+    font-size: 48px;
+    color: #c9a96b;
     margin-bottom: 18px;
-    color: rgba(255,255,255,.55);
-    text-decoration: none;
-    font-size: 12px;
-    letter-spacing: 0.25em;
-    text-transform: uppercase;
-    padding: 4px 0;
-    border-bottom: 1px solid rgba(255,255,255,.2);
+  }
+  .gate h1 {
+    font-family: "Songti SC", "YuMincho", "Hiragino Mincho ProN", Georgia, serif;
+    font-size: 26px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    letter-spacing: 0.05em;
+  }
+  .gate .subtitle {
+    font-size: 14px;
+    color: rgba(255,255,255,.6);
+    margin-bottom: 32px;
+    line-height: 1.6;
+  }
+  .gate input[type="password"] {
+    width: 100%;
+    padding: 14px 18px;
+    font-size: 15px;
+    font-family: inherit;
+    color: #fff;
+    background: rgba(255,255,255,.08);
+    border: 1px solid rgba(255,255,255,.2);
+    border-radius: 10px;
+    outline: none;
+    margin-bottom: 14px;
     transition: all .2s;
   }
-  .back:hover { color: #c9a96b; border-bottom-color: #c9a96b; }
-  h1 {
-    font-family: "Songti SC", "YuMincho", "Hiragino Mincho ProN", "Source Han Serif SC", Georgia, serif;
-    font-size: clamp(28px, 4.4vw, 44px);
-    font-weight: 600;
-    line-height: 1.25;
-    margin-bottom: 18px;
-  }
-  .subtitle {
-    font-size: clamp(14px, 1.4vw, 17px);
-    color: rgba(255,255,255,.72);
-    margin-bottom: 50px;
-    line-height: 1.7;
-  }
-  .picker { display: flex; flex-direction: column; gap: 14px; }
-  .picker a {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 22px 30px;
-    background: rgba(255,255,255,.07);
-    border: 1px solid rgba(255,255,255,.18);
-    border-radius: 12px;
-    text-decoration: none;
-    color: #fff;
-    transition: all 0.25s;
-    backdrop-filter: saturate(180%) blur(10px);
-    -webkit-backdrop-filter: saturate(180%) blur(10px);
-  }
-  .picker a:hover {
-    background: rgba(201,123,90,.18);
+  .gate input[type="password"]:focus {
     border-color: #c97b5a;
-    transform: translateY(-2px);
+    background: rgba(255,255,255,.12);
   }
-  .picker .lang {
-    font-family: "Songti SC", "YuMincho", Georgia, serif;
-    font-size: 22px;
+  .gate button {
+    width: 100%;
+    padding: 14px;
+    font-size: 14px;
     font-weight: 600;
-    letter-spacing: 0.05em;
-  }
-  .picker .label {
-    font-size: 12px;
-    letter-spacing: 0.3em;
-    color: #c9a96b;
+    letter-spacing: 0.15em;
+    color: #fff;
+    background: linear-gradient(135deg, #c97b5a 0%, #a35d3f 100%);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all .2s;
     text-transform: uppercase;
   }
-  .picker .arrow {
-    font-size: 22px;
-    color: rgba(255,255,255,.5);
-    transition: all 0.25s;
-  }
-  .picker a:hover .arrow {
-    color: #c97b5a;
-    transform: translateX(4px);
-  }
-  .meta {
-    margin-top: 50px;
-    padding-top: 28px;
-    border-top: 1px solid rgba(255,255,255,.15);
+  .gate button:hover { transform: translateY(-1px); box-shadow: 0 6px 20px rgba(201,123,90,.4); }
+  .gate button:disabled { opacity: 0.5; cursor: wait; }
+  .error {
+    margin-top: 16px;
+    padding: 10px 14px;
+    background: rgba(220, 80, 80, .15);
+    border: 1px solid rgba(220, 80, 80, .35);
+    border-radius: 8px;
+    color: #ffb8b8;
     font-size: 13px;
-    color: rgba(255,255,255,.45);
-    letter-spacing: 0.05em;
+    display: none;
   }
-  .meta .signature {
-    font-family: "Songti SC", "YuMincho", Georgia, serif;
-    color: #c9a96b;
-    font-size: 15px;
-    margin-bottom: 6px;
+  .error.show { display: block; }
+  .meta {
+    margin-top: 40px;
+    font-size: 11px;
+    color: rgba(255,255,255,.35);
+    letter-spacing: 0.1em;
   }
 </style>
 </head>
 <body>
-  <div class="container">
-    <a class="back" href="../index.html">← 返回首页 · Back to home</a>
-    <div class="eyebrow">University Visit · Shenzhen · Guangzhou · 2026</div>
-    <h1>大学的形态正在分化<br>南科大 · 港科广 · 喻纯专题报告</h1>
-    <p class="subtitle">2026 年 5 月 27–29 日 · SUSTech · HKUST-GZ · Tsinghua Prof. Yu Chun<br>请选择语言进入报告</p>
+<div class="gate" id="gate">
+  <div class="lock-icon">🔒</div>
+  <h1>受保护的报告</h1>
+  <p class="subtitle">Protected Report · 保護されたレポート<br>请输入访问密码 / Enter access password</p>
+  <form id="pw-form" autocomplete="off">
+    <input type="password" id="pw" placeholder="访问密码 / Access password" autofocus required>
+    <button type="submit" id="submit-btn">UNLOCK · 解锁</button>
+  </form>
+  <div class="error" id="err">密码错误 / Wrong password</div>
+  <div class="meta">AES-256-GCM · Client-side decryption</div>
+</div>
 
-    <div class="picker">
-      <a href="University-Report-CN.html">
-        <div><div class="label">Chinese · Original</div><div class="lang">中　文</div></div>
-        <span class="arrow">→</span>
-      </a>
-      <a href="University-Report-JA.html">
-        <div><div class="label">Japanese · である調</div><div class="lang">日本語</div></div>
-        <span class="arrow">→</span>
-      </a>
-      <a href="University-Report-EN.html">
-        <div><div class="label">English · Professional</div><div class="lang">English</div></div>
-        <span class="arrow">→</span>
-      </a>
-    </div>
+<script>
+const PAYLOAD = {"salt": "87M1gwWAU0sCf0DszM2//w==", "iv": "76iR2XNQfgphmCA+", "ciphertext": "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"};
+const STORAGE_KEY = 'sztrip_key_' + PAYLOAD.salt.substring(0, 8);
 
-    <div class="meta">
-      <div class="signature">Li Jingjing · 筑波大学 SLIS · Digital Nature Group</div>
-      <div>3 languages · Self-contained · Optimized for desktop &amp; mobile</div>
-    </div>
-  </div>
+function b64decode(s) {
+  const bin = atob(s);
+  const arr = new Uint8Array(bin.length);
+  for (let i = 0; i < bin.length; i++) arr[i] = bin.charCodeAt(i);
+  return arr;
+}
+
+async function deriveKey(password, salt) {
+  const enc = new TextEncoder();
+  const passKey = await crypto.subtle.importKey(
+    'raw', enc.encode(password), 'PBKDF2', false, ['deriveKey']
+  );
+  return crypto.subtle.deriveKey(
+    { name: 'PBKDF2', salt, iterations: 600000, hash: 'SHA-256' },
+    passKey,
+    { name: 'AES-GCM', length: 256 },
+    true,
+    ['decrypt']
+  );
+}
+
+async function tryDecrypt(key) {
+  const iv = b64decode(PAYLOAD.iv);
+  const ct = b64decode(PAYLOAD.ciphertext);
+  const plain = await crypto.subtle.decrypt({ name: 'AES-GCM', iv }, key, ct);
+  return new TextDecoder().decode(plain);
+}
+
+function installDecrypted(html) {
+  // Replace the entire document. Use document.open/write/close so scripts re-execute.
+  document.open();
+  document.write(html);
+  document.close();
+}
+
+async function attemptWithStoredKey() {
+  // sessionStorage persists across same-tab navigation but clears on tab close.
+  // Use localStorage instead so cross-page navigation (and refresh) work seamlessly.
+  const stored = localStorage.getItem(STORAGE_KEY);
+  if (!stored) return false;
+  try {
+    const rawKey = b64decode(stored);
+    const key = await crypto.subtle.importKey(
+      'raw', rawKey, { name: 'AES-GCM' }, false, ['decrypt']
+    );
+    const html = await tryDecrypt(key);
+    installDecrypted(html);
+    return true;
+  } catch (e) {
+    localStorage.removeItem(STORAGE_KEY);
+    return false;
+  }
+}
+
+document.getElementById('pw-form').addEventListener('submit', async (e) => {
+  e.preventDefault();
+  const pw = document.getElementById('pw').value;
+  const btn = document.getElementById('submit-btn');
+  const err = document.getElementById('err');
+  err.classList.remove('show');
+  btn.disabled = true;
+  btn.textContent = 'UNLOCKING…';
+  try {
+    const salt = b64decode(PAYLOAD.salt);
+    const key = await deriveKey(pw, salt);
+    const html = await tryDecrypt(key);
+    // Save raw key to localStorage so subsequent pages don't need re-derivation.
+    const rawKey = await crypto.subtle.exportKey('raw', key);
+    const rawB64 = btoa(String.fromCharCode.apply(null, new Uint8Array(rawKey)));
+    localStorage.setItem(STORAGE_KEY, rawB64);
+    installDecrypted(html);
+  } catch (e) {
+    err.classList.add('show');
+    btn.disabled = false;
+    btn.textContent = 'UNLOCK · 解锁';
+    document.getElementById('pw').focus();
+    document.getElementById('pw').select();
+  }
+});
+
+// Auto-attempt with stored key on load
+attemptWithStoredKey();
+</script>
 </body>
 </html>
