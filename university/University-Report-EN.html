@@ -1,0 +1,1244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shenzhen and Guangzhou University Visits | SUSTech, HKUST-GZ, Yu Chun Talk | May 27–29, 2026</title>
+<style>
+  :root {
+    --navy: #1a2a3a;
+    --navy-soft: #2c3e50;
+    --terracotta: #c97b5a;
+    --terracotta-dark: #a35d3f;
+    --cream: #f7f3eb;
+    --cream-deep: #efe7d6;
+    --sage: #7a8b6f;
+    --sage-soft: #a8b89c;
+    --gold: #c9a96b;
+    --ink: #232020;
+    --ink-soft: #4a4a4a;
+    --paper: #fbfaf6;
+    --border: #d9d0bd;
+    --plum: #6e4d6e;
+    --shadow: 0 2px 20px rgba(26,42,58,.08);
+    --shadow-strong: 0 8px 36px rgba(26,42,58,.14);
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: -apple-system, "PingFang SC", "Hiragino Sans GB", "Source Han Sans SC", "Noto Sans CJK SC", "Microsoft YaHei", sans-serif;
+    color: var(--ink);
+    background: var(--paper);
+    line-height: 1.75;
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+  }
+  h1, h2, h3, h4, .serif {
+    font-family: "Songti SC", "Source Han Serif SC", "Noto Serif CJK SC", "STSong", Georgia, serif;
+    letter-spacing: 0.02em;
+  }
+
+  /* HERO */
+  .hero {
+    background: linear-gradient(135deg, #1a2a3a 0%, #2c3e50 55%, #3a3050 100%);
+    color: #fff;
+    padding: 90px 8% 80px;
+    position: relative;
+    overflow: hidden;
+  }
+  .hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background:
+      radial-gradient(circle at 15% 25%, rgba(110,77,110,.28) 0%, transparent 35%),
+      radial-gradient(circle at 80% 75%, rgba(201,169,107,.14) 0%, transparent 40%);
+    pointer-events: none;
+  }
+  .hero-inner { position: relative; max-width: 1100px; margin: 0 auto; }
+  .hero .eyebrow {
+    font-size: 13px;
+    letter-spacing: 0.45em;
+    color: var(--gold);
+    text-transform: uppercase;
+    margin-bottom: 24px;
+    font-weight: 500;
+  }
+  .hero h1 {
+    font-size: clamp(32px, 5vw, 56px);
+    font-weight: 600;
+    line-height: 1.18;
+    margin-bottom: 18px;
+  }
+  .hero .subtitle {
+    font-size: clamp(16px, 1.6vw, 19px);
+    color: rgba(255,255,255,.78);
+    max-width: 760px;
+    margin-bottom: 36px;
+    line-height: 1.7;
+  }
+  .hero-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 36px 56px;
+    padding-top: 28px;
+    border-top: 1px solid rgba(255,255,255,.18);
+  }
+  .meta-item .label {
+    font-size: 11px;
+    letter-spacing: 0.3em;
+    color: var(--gold);
+    text-transform: uppercase;
+    margin-bottom: 6px;
+  }
+  .meta-item .value {
+    font-size: 17px;
+    color: #fff;
+    font-weight: 500;
+  }
+
+  /* NAV */
+  nav.toc {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: rgba(251, 250, 246, 0.94);
+    backdrop-filter: saturate(180%) blur(12px);
+    -webkit-backdrop-filter: saturate(180%) blur(12px);
+    border-bottom: 1px solid var(--border);
+  }
+  nav.toc ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 8%;
+  }
+  nav.toc a {
+    display: block;
+    padding: 16px 18px;
+    color: var(--ink-soft);
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    border-bottom: 2px solid transparent;
+    transition: all .2s;
+    white-space: nowrap;
+  }
+  nav.toc a:hover {
+    color: var(--terracotta);
+    border-bottom-color: var(--terracotta);
+  }
+
+  /* MAIN */
+  main { max-width: 1100px; margin: 0 auto; padding: 0 8%; }
+  section.block { padding: 80px 0 30px; scroll-margin-top: 60px; }
+  section.block:not(:last-child) { border-bottom: 1px solid var(--border); padding-bottom: 80px; }
+
+  .section-eyebrow {
+    font-size: 11px;
+    letter-spacing: 0.5em;
+    color: var(--terracotta);
+    text-transform: uppercase;
+    margin-bottom: 12px;
+    font-weight: 600;
+  }
+  h2.section-title {
+    font-size: clamp(28px, 3.6vw, 40px);
+    font-weight: 600;
+    color: var(--navy);
+    margin-bottom: 20px;
+    line-height: 1.25;
+  }
+  .section-lead {
+    font-size: 18px;
+    color: var(--ink-soft);
+    max-width: 740px;
+    margin-bottom: 50px;
+    line-height: 1.75;
+  }
+  h3.subsection {
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--navy);
+    margin: 50px 0 18px;
+    padding-left: 16px;
+    border-left: 4px solid var(--terracotta);
+    line-height: 1.4;
+  }
+  h4.minor-head {
+    font-size: 17px;
+    font-weight: 600;
+    color: var(--navy);
+    margin: 28px 0 10px;
+  }
+  p { margin-bottom: 18px; color: var(--ink); }
+  a { color: var(--terracotta-dark); }
+
+  /* SUMMARY STATS */
+  .summary-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 18px;
+    margin: 30px 0 10px;
+  }
+  .summary-stat {
+    background: #fff;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 24px 22px;
+    box-shadow: var(--shadow);
+  }
+  .summary-stat .num {
+    font-family: "Songti SC", Georgia, serif;
+    font-size: 36px;
+    font-weight: 600;
+    color: var(--terracotta);
+    line-height: 1.1;
+    margin-bottom: 6px;
+  }
+  .summary-stat .num small { font-size: 18px; color: var(--ink-soft); margin-left: 4px; }
+  .summary-stat .desc { font-size: 14px; color: var(--ink-soft); line-height: 1.55; }
+
+  /* TIMELINE */
+  .timeline { margin: 40px 0 10px; position: relative; }
+  .timeline::before {
+    content: "";
+    position: absolute;
+    left: 100px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: linear-gradient(180deg, var(--terracotta) 0%, var(--gold) 50%, var(--plum) 100%);
+  }
+  .tl-row {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    gap: 30px;
+    padding: 12px 0 20px;
+    align-items: start;
+    position: relative;
+  }
+  .tl-row::before {
+    content: "";
+    position: absolute;
+    left: 94px;
+    top: 22px;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: var(--paper);
+    border: 3px solid var(--terracotta);
+    z-index: 1;
+  }
+  .tl-time {
+    font-family: "Songti SC", Georgia, serif;
+    font-weight: 600;
+    color: var(--navy);
+    text-align: right;
+    font-size: 15px;
+    padding-top: 16px;
+  }
+  .tl-time .day { display: block; font-size: 11px; color: var(--terracotta); letter-spacing: 0.2em; margin-bottom: 4px; }
+  .tl-card {
+    background: #fff;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 16px 22px;
+    box-shadow: var(--shadow);
+  }
+  .tl-card h5 { font-size: 16px; font-weight: 600; color: var(--navy); margin-bottom: 6px; }
+  .tl-card p { font-size: 14px; color: var(--ink-soft); margin: 0; line-height: 1.6; }
+  .tl-day-marker {
+    display: flex;
+    align-items: center;
+    margin: 30px 0 16px;
+    padding-left: 6px;
+    gap: 18px;
+  }
+  .tl-day-marker .day-num {
+    font-family: "Songti SC", Georgia, serif;
+    font-size: 36px;
+    font-weight: 600;
+    color: var(--terracotta);
+    line-height: 1;
+  }
+  .tl-day-marker .day-desc { font-size: 14px; color: var(--ink-soft); letter-spacing: 0.1em; }
+
+  /* PULL QUOTE */
+  .pullquote {
+    margin: 36px 0;
+    padding: 28px 36px 28px 32px;
+    border-left: 4px solid var(--terracotta);
+    background: linear-gradient(90deg, rgba(201,123,90,.07) 0%, transparent 100%);
+    font-family: "Songti SC", Georgia, serif;
+    font-size: 20px;
+    color: var(--navy);
+    line-height: 1.7;
+    font-style: italic;
+    font-weight: 500;
+  }
+  .pullquote .attr {
+    display: block;
+    margin-top: 14px;
+    font-family: -apple-system, "PingFang SC", sans-serif;
+    font-size: 13px;
+    font-style: normal;
+    color: var(--ink-soft);
+    letter-spacing: 0.1em;
+  }
+
+  /* VISIT CARD */
+  .visit-card {
+    background: #fff;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 40px 42px;
+    margin: 30px 0 40px;
+    box-shadow: var(--shadow);
+  }
+  .visit-card .uni-meta {
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: 14px;
+    margin-bottom: 18px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid var(--cream-deep);
+  }
+  .visit-card .uni-name {
+    font-family: "Songti SC", Georgia, serif;
+    font-size: 26px;
+    font-weight: 600;
+    color: var(--navy);
+  }
+  .visit-card .uni-tag {
+    font-size: 12px;
+    padding: 3px 12px;
+    background: var(--cream-deep);
+    color: var(--terracotta-dark);
+    border-radius: 12px;
+    letter-spacing: 0.1em;
+  }
+  .visit-card .uni-tag.hci { background: #e8eef0; color: var(--navy-soft); }
+  .visit-card .uni-tag.research { background: #e8efe5; color: #5a6e4f; }
+  .visit-card .uni-tag.philosophy { background: #efe6ef; color: var(--plum); }
+
+  /* KEY POINTS */
+  .keypoints {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 18px;
+    margin: 24px 0 8px;
+  }
+  .kp {
+    background: var(--cream);
+    border-radius: 6px;
+    padding: 18px 20px;
+    border-top: 3px solid var(--terracotta);
+  }
+  .kp .kp-title {
+    font-weight: 600;
+    color: var(--navy);
+    font-size: 15px;
+    margin-bottom: 6px;
+  }
+  .kp .kp-body { font-size: 14px; color: var(--ink-soft); line-height: 1.6; }
+
+  /* PYRAMID (孵化阶段) */
+  .pyramid {
+    margin: 30px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+  }
+  .pyramid-row {
+    background: #fff;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 14px 22px;
+    box-shadow: var(--shadow);
+    text-align: center;
+    width: 100%;
+    transition: transform .2s;
+  }
+  .pyramid-row:hover { transform: translateY(-1px); }
+  .pyramid-row.l1 { width: 38%; background: linear-gradient(135deg, #1a2a3a 0%, #2c3e50 100%); color: #fff; border: none; }
+  .pyramid-row.l2 { width: 46%; background: linear-gradient(135deg, #c97b5a 0%, #d8956f 100%); color: #fff; border: none; }
+  .pyramid-row.l3 { width: 54%; background: var(--cream-deep); }
+  .pyramid-row.l4 { width: 70%; background: #fff; }
+  .pyramid-row.l5 { width: 90%; background: var(--cream); }
+  .pyramid-row .level {
+    font-size: 11px;
+    letter-spacing: 0.35em;
+    text-transform: uppercase;
+    margin-bottom: 4px;
+    opacity: 0.85;
+  }
+  .pyramid-row.l3 .level, .pyramid-row.l4 .level, .pyramid-row.l5 .level { color: var(--terracotta); }
+  .pyramid-row .count {
+    font-family: "Songti SC", Georgia, serif;
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 4px;
+  }
+  .pyramid-row.l3 .count, .pyramid-row.l4 .count, .pyramid-row.l5 .count { color: var(--navy); }
+  .pyramid-row .desc { font-size: 13px; opacity: 0.85; }
+  .pyramid-row.l3 .desc, .pyramid-row.l4 .desc, .pyramid-row.l5 .desc { color: var(--ink-soft); }
+
+  /* FIGURE */
+  figure {
+    margin: 28px 0;
+    background: #fff;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+  }
+  figure img { width: 100%; display: block; }
+  figcaption {
+    font-size: 13px;
+    color: var(--ink-soft);
+    padding: 12px 18px 14px;
+    background: var(--cream);
+    line-height: 1.55;
+    border-top: 1px solid var(--cream-deep);
+  }
+  figcaption strong { color: var(--navy); }
+  .figure-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin: 28px 0;
+  }
+  .figure-row figure { margin: 0; }
+
+  /* INSIGHT CARD */
+  .insight-card {
+    background: linear-gradient(135deg, var(--navy) 0%, var(--navy-soft) 100%);
+    color: #fff;
+    border-radius: 12px;
+    padding: 40px 44px;
+    margin: 36px 0;
+    box-shadow: var(--shadow-strong);
+    position: relative;
+    overflow: hidden;
+  }
+  .insight-card::before {
+    content: "";
+    position: absolute;
+    top: -50px;
+    right: -50px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(201,123,90,.2) 0%, transparent 70%);
+  }
+  .insight-card .label {
+    color: var(--gold);
+    font-size: 11px;
+    letter-spacing: 0.4em;
+    font-weight: 600;
+    margin-bottom: 16px;
+  }
+  .insight-card h3 {
+    color: #fff;
+    font-family: "Songti SC", Georgia, serif;
+    font-size: 26px;
+    margin-bottom: 16px;
+    line-height: 1.4;
+    border: 0;
+    padding: 0;
+  }
+  .insight-card p {
+    color: rgba(255,255,255,.85);
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 14px;
+  }
+  .insight-card .compare {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 26px;
+    margin-top: 20px;
+    padding-top: 22px;
+    border-top: 1px solid rgba(255,255,255,.18);
+  }
+  .insight-card .compare h4 {
+    color: var(--gold);
+    font-size: 14px;
+    letter-spacing: 0.15em;
+    margin-bottom: 10px;
+  }
+  .insight-card .compare p { font-size: 14px; line-height: 1.7; margin: 0; }
+
+  /* GALLERY */
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 12px;
+    margin: 30px 0;
+  }
+  .gallery figure { margin: 0; }
+  .gallery img { aspect-ratio: 1; object-fit: cover; }
+  .gallery figcaption { font-size: 12px; padding: 8px 12px; }
+
+  /* FOOTER */
+  footer {
+    background: var(--navy);
+    color: rgba(255,255,255,.6);
+    padding: 40px 8%;
+    margin-top: 60px;
+    text-align: center;
+    font-size: 13px;
+    letter-spacing: 0.05em;
+  }
+  footer .signature {
+    font-family: "Songti SC", Georgia, serif;
+    color: var(--gold);
+    font-size: 18px;
+    margin-bottom: 10px;
+    letter-spacing: 0.1em;
+  }
+
+  /* SVG FLOW */
+  .svg-flow {
+    background: #fff;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 22px 18px 18px;
+    margin: 26px 0 14px;
+    box-shadow: var(--shadow);
+  }
+  .svg-flow-title {
+    font-family: "Songti SC", Georgia, serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--navy);
+    margin-bottom: 10px;
+    padding-left: 8px;
+    border-left: 3px solid var(--terracotta);
+  }
+  .svg-flow svg { display: block; width: 100%; height: auto; max-width: 100%; }
+  .svg-legend {
+    font-size: 12px;
+    color: var(--ink-soft);
+    margin-top: 14px;
+    padding: 10px 14px 8px;
+    background: var(--cream);
+    border-radius: 6px;
+    line-height: 1.6;
+  }
+  .svg-legend strong { color: var(--navy); }
+
+  /* ============ LANG SWITCHER ============ */
+  .lang-switch {
+    position: fixed;
+    top: 18px;
+    right: 18px;
+    z-index: 200;
+    background: rgba(26, 42, 58, 0.88);
+    backdrop-filter: saturate(180%) blur(14px);
+    -webkit-backdrop-filter: saturate(180%) blur(14px);
+    border-radius: 24px;
+    padding: 5px;
+    display: flex;
+    gap: 2px;
+    box-shadow: 0 6px 24px rgba(0,0,0,0.25);
+  }
+  .lang-switch a {
+    padding: 7px 14px;
+    border-radius: 18px;
+    text-decoration: none;
+    color: rgba(255,255,255,0.72);
+    font-size: 13px;
+    font-weight: 500;
+    transition: all 0.2s;
+    letter-spacing: 0.05em;
+  }
+  .lang-switch a:hover { color: #fff; background: rgba(255,255,255,0.08); }
+  .lang-switch a.active {
+    background: var(--terracotta);
+    color: #fff;
+  }
+
+  @media (max-width: 760px) {
+    .lang-switch { top: 12px; right: 12px; padding: 3px; }
+    .lang-switch a { padding: 5px 10px; font-size: 12px; }
+  }
+
+  @media (max-width: 760px) {
+    .hero { padding: 60px 6% 48px; }
+    main { padding: 0 6%; }
+    section.block { padding: 50px 0 20px; }
+    .visit-card { padding: 28px 22px; }
+    .timeline::before { left: 80px; }
+    .tl-row { grid-template-columns: 80px 1fr; gap: 18px; }
+    .tl-row::before { left: 74px; }
+    .figure-row { grid-template-columns: 1fr; }
+    .insight-card { padding: 28px 22px; }
+    .insight-card .compare { grid-template-columns: 1fr; }
+    .pyramid-row { width: 100% !important; }
+    nav.toc ul { padding: 0 6%; overflow-x: auto; flex-wrap: nowrap; }
+  }
+</style>
+</head>
+<body>
+
+<div class="lang-switch">
+  <a href="University-Report-CN.html">中文</a>
+  <a href="University-Report-JA.html">日本語</a>
+  <a href="University-Report-EN.html" class="active">English</a>
+</div>
+
+<header class="hero">
+  <div class="hero-inner">
+    <div class="eyebrow">Academic Visit · Shenzhen · Guangzhou · 2026</div>
+    <h1>The Shape of the University is Diverging:<br>SUSTech, HKUST-GZ, and Yu Chun's Talk</h1>
+    <p class="subtitle">Three days of university visits traced a clear comparative line. SUSTech in Shenzhen represents <strong>rapid transformation driven by policy</strong>; HKUST-GZ in Guangzhou displays <strong>a mature incubation ecosystem rooted in 34 years of HKUST heritage</strong>; and Professor Yu Chun's keynote from Tsinghua pushed human-computer interaction toward a fresh perspective: <strong>causality, a Human World Model, and interactive learning</strong>.</p>
+    <div class="hero-meta">
+      <div class="meta-item"><div class="label">Duration</div><div class="value">May 27 — 29, 2026</div></div>
+      <div class="meta-item"><div class="label">Institutions</div><div class="value">SUSTech · HKUST-GZ · Yu Chun (Tsinghua)</div></div>
+      <div class="meta-item"><div class="label">Focus</div><div class="value">HCI · Business Incubation · Causal Framework</div></div>
+      <div class="meta-item"><div class="label">Theme</div><div class="value">The boundary between academia and industry is being redrawn</div></div>
+    </div>
+  </div>
+</header>
+
+<nav class="toc">
+  <ul>
+    <li><a href="#summary">Summary</a></li>
+    <li><a href="#schedule">Itinerary</a></li>
+    <li><a href="#sustech">D1 SUSTech</a></li>
+    <li><a href="#hkustgz">D2 HKUST-GZ</a></li>
+    <li><a href="#yuchun">D3 Yu Chun Talk</a></li>
+    <li><a href="#reflection">My Reflection</a></li>
+    <li><a href="#gallery">Photo Gallery</a></li>
+  </ul>
+</nav>
+
+<main>
+
+<!-- SUMMARY -->
+<section class="block" id="summary">
+  <div class="section-eyebrow">Executive Summary</div>
+  <h2 class="section-title">Two Universities in Contrast, and a Tsinghua Scholar's Causal Reframing</h2>
+  <p class="section-lead">This three-day visit revealed two <strong>strikingly different "university evolution paths"</strong> within the same country. SUSTech sits in a period of rapid transformation driven by Shenzhen's policy shifts, with departmental structures rewritten almost every year. HKUST-GZ inherits 34 years of HKUST's academic-to-commercial conversion lineage, treating "academia to industry" as an assembly line from a student's first day. Professor Yu Chun's keynote lifted both cases to a shared question: <strong>"In the era of large language models, how should the HCI research paradigm be reconstructed?"</strong> His answer was a single word: <strong>causality</strong>.</p>
+
+  <div class="summary-grid">
+    <div class="summary-stat">
+      <div class="num">~50<small>%</small></div>
+      <div class="desc">Share of SUSTech faculty with international backgrounds (including domestic faculty with overseas study experience)</div>
+    </div>
+    <div class="summary-stat">
+      <div class="num">1:1</div>
+      <div class="desc">SUSTech undergraduate-to-faculty ratio (approximately 15 undergraduates per faculty member at admission)</div>
+    </div>
+    <div class="summary-stat">
+      <div class="num">34<small> years</small></div>
+      <div class="desc">Total history of HKUST, accumulating academic heritage from the Hong Kong main campus to the Guangzhou campus</div>
+    </div>
+    <div class="summary-stat">
+      <div class="num">1,700</div>
+      <div class="desc">Number of early-stage projects dynamically incubated in the HKUST-GZ system</div>
+    </div>
+    <div class="summary-stat">
+      <div class="num">14</div>
+      <div class="desc">Listed companies spun out of the HKUST network, including 10 unicorns such as DJI</div>
+    </div>
+    <div class="summary-stat">
+      <div class="num">20<small> years</small></div>
+      <div class="desc">Professor Yu Chun's research career, from his 2006 Tsinghua PhD to today, as one of the principal proponents of the causal framework in HCI</div>
+    </div>
+  </div>
+</section>
+
+<!-- SCHEDULE -->
+<section class="block" id="schedule">
+  <div class="section-eyebrow">Itinerary</div>
+  <h2 class="section-title">Three-Day Itinerary at a Glance</h2>
+  <p class="section-lead">Two cities, three campuses. Day 1 was a full day at SUSTech in Shenzhen; Day 2 transitioned to Guangzhou for the HKUST-GZ campus; Day 3 returned to HKUST-GZ for Professor Yu Chun's keynote.</p>
+
+  <div class="timeline">
+    <div class="tl-day-marker">
+      <span class="day-num">D1</span>
+      <span class="day-desc">Wednesday, May 27, 2026 · Nanshan, Shenzhen · Southern University of Science and Technology</span>
+    </div>
+    <div class="tl-row">
+      <div class="tl-time"><span class="day">AM</span>09:30–12:00</div>
+      <div class="tl-card"><h5>SUSTech School of Design and main campus tour</h5><p>Hosted by collaborator Prof. Li Xueliang; exposure to HCI, design, and materials research directions; review of project posters including ProjecTA.</p></div>
+    </div>
+    <div class="tl-row">
+      <div class="tl-time"><span class="day">PM</span>14:00–17:00</div>
+      <div class="tl-card"><h5>Labs and product showcase</h5><p>School of Design labs (robotics, projection, 3D printing, and laser cutting), and graduation-project showcase (OptiRay, MIMETICS, Hearing Aid).</p></div>
+    </div>
+
+    <div class="tl-day-marker">
+      <span class="day-num">D2</span>
+      <span class="day-desc">Thursday, May 28, 2026 · Nansha, Guangzhou · HKUST-GZ</span>
+    </div>
+    <div class="tl-row">
+      <div class="tl-time"><span class="day">AM</span>10:00–12:00</div>
+      <div class="tl-card"><h5>HKUST-GZ campus tour and departmental exchange</h5><p>Hosted by collaborator Prof. Zhou Qiushi; new campus architecture, HCI faculty composition, and the materials-AI lab corridor.</p></div>
+    </div>
+    <div class="tl-row">
+      <div class="tl-time"><span class="day">PM</span>14:00–17:00</div>
+      <div class="tl-card"><h5>Exchange on the business incubation system</h5><p>Conversation with researchers from HKUST-GZ affiliated companies: the six-tier incubation structure, the Red Bird Program, and the academic-to-commercial conversion pipeline.</p></div>
+    </div>
+
+    <div class="tl-day-marker">
+      <span class="day-num">D3</span>
+      <span class="day-desc">Friday, May 29, 2026 · HKUST-GZ · Keynote by Professor Yu Chun (Tsinghua)</span>
+    </div>
+    <div class="tl-row">
+      <div class="tl-time"><span class="day">AM</span>10:00–12:00</div>
+      <div class="tl-card"><h5>"A Causal Perspective on Human-Computer Interaction in the LLM Era: From Interactive Learning to the Human World Model"</h5><p>Professor Yu Chun, Department of Computer Science, Tsinghua University, on May 29, 2026. Curved-screen auditorium, roughly 60 minutes plus open Q&amp;A.</p></div>
+    </div>
+    <div class="tl-row">
+      <div class="tl-time"><span class="day">PM</span>14:00–16:00</div>
+      <div class="tl-card"><h5>Follow-up conversation with Prof. Zhou Qiushi</h5><p>Philosophy of technology; how academic research can extend into artistic works to improve the output efficiency of a single research project.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- DAY 1: SUSTECH -->
+<section class="block" id="sustech">
+  <div class="section-eyebrow">Day 1 · Shenzhen</div>
+  <h2 class="section-title">Southern University of Science and Technology: An Internationalized University Amid Rapid Policy Shifts</h2>
+  <p class="section-lead">Shenzhen's developmental velocity has made SUSTech a university that is "always redefining itself." Its departmental structure, research planning, and admissions strategy are reshaped every few years by Shenzhen's policy direction. This visit gave me a direct sense of that <strong>"fast but unstable"</strong> duality.</p>
+
+  <div class="visit-card">
+    <div class="uni-meta">
+      <span class="uni-name">Southern University of Science and Technology (SUSTech)</span>
+      <span class="uni-tag">Nanshan, Shenzhen</span>
+      <span class="uni-tag hci">HCI / Design</span>
+      <span class="uni-tag research">Interdisciplinary</span>
+    </div>
+
+    <h3 class="subsection">1. Rapid Transformation Driven by Policy</h3>
+    <p>Shenzhen's development policies shift markedly every few years, and the university adapts at high speed. A direct example: SUSTech's HCI research community <strong>had originally planned to establish an independent School of Design</strong>, but this plan has since been shelved or restructured due to policy changes. <strong>Departmental structures, faculty recruitment, and research-direction realignments occur far more frequently than at traditional mainland universities.</strong> This is both Shenzhen's strength (rapid experimentation) and its burden (a lack of long-term stability).</p>
+
+    <h3 class="subsection">2. Internationalized Faculty and a 1:1 Student-to-Faculty Ratio</h3>
+    <div class="keypoints">
+      <div class="kp">
+        <div class="kp-title">Faculty composition</div>
+        <div class="kp-body">More than 50% of faculty come from abroad, and all domestic faculty hold overseas study backgrounds. SUSTech is effectively a "globally positioned" domestic university.</div>
+      </div>
+      <div class="kp">
+        <div class="kp-title">Faculty-to-student ratio</div>
+        <div class="kp-body">Undergraduate admissions amount to roughly 15 students per faculty member, with student and faculty headcounts essentially comparable. The model resembles <strong>a research institute or liberal arts college</strong> with a very high faculty-to-student ratio.</div>
+      </div>
+      <div class="kp">
+        <div class="kp-title">Presidential vision</div>
+        <div class="kp-body">President <strong>Guan Daowen</strong> favors an open-style teaching environment in which faculty and students share fluid spaces and classrooms are transparent, emphasizing communicability, mobility, and openness.</div>
+      </div>
+      <div class="kp">
+        <div class="kp-title">Funding for new faculty</div>
+        <div class="kp-body">Incoming faculty receive dedicated startup funding, and humanoid robots (conversational robots and small-company robots) have already been acquired for research use.</div>
+      </div>
+    </div>
+
+    <figure>
+      <img src="report_images/01_sustech_lobby.jpg" alt="SUSTech lobby">
+      <figcaption>An <strong>open public space</strong> inside the SUSTech campus. Students wait seated on the floor, faculty and students intermingle, and glass walls are used extensively. This "<strong>space as pedagogical language</strong>" design is the physical embodiment of President Guan Daowen's open-campus philosophy.</figcaption>
+    </figure>
+
+    <h3 class="subsection">3. HCI Research Directions: Diverse, International, Unsettled</h3>
+    <p>The diversity of HCI research directions at SUSTech is striking, and it was my most immediate impression of the visit. I observed at least the following directions:</p>
+
+    <div class="keypoints">
+      <div class="kp">
+        <div class="kp-title">Robotics and projection-based teaching</div>
+        <div class="kp-body">Prof. An's team (accepted to CHI 2026) projects an LLM-based teaching assistant onto the surrounding space, guiding the user's gaze away from the robot's body. This is ProjecTA.</div>
+      </div>
+      <div class="kp">
+        <div class="kp-title">EEG signal visualization</div>
+        <div class="kp-body">Visualization and interpretable representation of BCI and EEG data, spanning technology and cognitive science.</div>
+      </div>
+      <div class="kp">
+        <div class="kp-title">Philosophy of technology</div>
+        <div class="kp-body">Application of theoretical resources such as postphenomenology in HCI, drawing on the tradition of Don Ihde.</div>
+      </div>
+      <div class="kp">
+        <div class="kp-title">Art and technology</div>
+        <div class="kp-body">Projects at the intersection of art and science, including RESTORE, Brain Visions, and the Future Spaces Vision Lab.</div>
+      </div>
+      <div class="kp">
+        <div class="kp-title">Materials and HCI</div>
+        <div class="kp-body">Integration of flexible materials, smart materials, and ergonomics (OptiRay, MIMETICS, and the 2026 Hearing Aid).</div>
+      </div>
+    </div>
+
+    <div class="figure-row">
+      <figure>
+        <img src="report_images/04_sustech_projecta_poster.jpg" alt="ProjecTA poster">
+        <figcaption><strong>ProjecTA: A Semi-Humanoid Robotic Teaching Assistant with In-Situ Projection for Guided Tours.</strong> A CHI 2026 paper from the SUSTech School of Design. The core innovation uses <strong>projection</strong> to place information into the surrounding space, redirecting the user's attention "<strong>from the robot's body to objects in the environment</strong>." It is a concrete design move pushing human-computer interaction from machine-centered toward environment-centered.</figcaption>
+      </figure>
+      <figure>
+        <img src="report_images/02_sustech_design_posters.jpg" alt="School of Design poster wall">
+        <figcaption>The <strong>cross-direction poster wall</strong> of the School of Design. RESTORE, Brain Visions, the Future Spaces Vision Lab, and Tell Me Concrete Stories are exhibited side by side, offering physical evidence of the school's orientation toward "<strong>diversity over concentration</strong>."</figcaption>
+      </figure>
+    </div>
+
+    <div class="figure-row">
+      <figure>
+        <img src="report_images/05_sustech_maker_lab.jpg" alt="SUSTech lab">
+        <figcaption>The <strong>prototype fabrication space</strong> of the School of Design. Multiple motion-capture cameras hang from the ceiling, while 3D printers and laser cutters are distributed on the floor. It is a hybrid laboratory that "<strong>supports hardware prototyping and software experiments at the same time</strong>."</figcaption>
+      </figure>
+      <figure>
+        <img src="report_images/06_sustech_design_products.jpg" alt="Design product showcase">
+        <figcaption>The School of Design's <strong>product showcase</strong>, featuring student and faculty collaborations including OptiRay (2024), the MIMETICS user manual, and the 2026 Hearing Aid. One line on the case stands out: "<strong>Design isn't born perfect, it's shaped through process.</strong>"</figcaption>
+      </figure>
+    </div>
+
+    <h3 class="subsection">4. Collaborator Prof. Li Xueliang: The Real Pressure of Design Research and Grant Applications</h3>
+    <p>My host, <strong>Prof. Li Xueliang</strong>, works primarily on design. He spoke frankly: national-level research grant applications are deeply unfriendly to <strong>comprehensive, interdisciplinary research</strong>. The evaluation criteria are built around foundational disciplines, "<strong>foundational disciplines hold the largest share and are easier to fund</strong>," whereas interdisciplinary HCI and design projects struggle to compete within that framework.</p>
+
+    <div class="pullquote">
+      Interdisciplinary, comprehensive research like ours is evaluated under the foundational-discipline framework — the challenge is substantial.
+      <span class="attr">— Li Xueliang (SUSTech School of Design)</span>
+    </div>
+
+    <figure>
+      <img src="report_images/07_sustech_campus_tree.jpg" alt="SUSTech banyan tree">
+      <figcaption>The <strong>great banyan tree</strong> on the SUSTech campus. This tree has become a favorite photo spot for every visitor. Its physical mass forms a strong contrast with the modern campus architecture, symbolizing the tension between "<strong>new campus and old land</strong>."</figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- DAY 2: HKUST-GZ -->
+<section class="block" id="hkustgz">
+  <div class="section-eyebrow">Day 2 · Guangzhou</div>
+  <h2 class="section-title">HKUST-GZ: A Mature Incubation Ecosystem Transplanting 34 Years of HKUST Heritage to Guangzhou</h2>
+  <p class="section-lead">Traveling from Shenzhen to the HKUST-GZ campus in Nansha, Guangzhou, the overall atmosphere stood in sharp contrast to SUSTech. The campus felt <strong>more energetic and more driven, with a strong tempo yet without anxiety</strong>. The site has been operating for only about three years, yet it inherits 34 years of academic and industrial heritage from the Hong Kong main campus. This combination of "<strong>new campus and mature DNA</strong>" produced the most systematic finding of my trip: HKUST-GZ's six-tier business incubation structure.</p>
+
+  <div class="visit-card">
+    <div class="uni-meta">
+      <span class="uni-name">The Hong Kong University of Science and Technology (Guangzhou) · HKUST-GZ</span>
+      <span class="uni-tag">Nansha, Guangzhou</span>
+      <span class="uni-tag hci">HCI · AI · Materials</span>
+      <span class="uni-tag research">Academia–Industry Integration</span>
+    </div>
+
+    <h3 class="subsection">1. The Early-Stage Dividend of a New Campus</h3>
+    <div class="keypoints">
+      <div class="kp">
+        <div class="kp-title">Year established</div>
+        <div class="kp-body">Built between 2022 and 2023, the campus is now about three years old and remains in <strong>an early high-growth phase</strong>.</div>
+      </div>
+      <div class="kp">
+        <div class="kp-title">Funding momentum</div>
+        <div class="kp-body">Funding across all areas is abundant at this initial stage, sustaining strong momentum and leaving ample room for reform and innovation.</div>
+      </div>
+      <div class="kp">
+        <div class="kp-title">Faculty internationalization</div>
+        <div class="kp-body">HCI faculty are highly international, with a large share of foreign-passport faculty; all Chinese-citizen faculty come from leading international universities (and from top domestic institutions such as Tsinghua and Peking University).</div>
+      </div>
+      <div class="kp">
+        <div class="kp-title">Heritage</div>
+        <div class="kp-body">The campus inherits 34 years of <strong>commercialization culture</strong> from the Hong Kong main campus. All scientific research is grounded in a "<strong>value-oriented</strong>" logic.</div>
+      </div>
+    </div>
+
+    <div class="figure-row">
+      <figure>
+        <img src="report_images/08_hkustgz_staircase.jpg" alt="HKUST-GZ spiral staircase">
+        <figcaption>The <strong>spiral staircase</strong> inside a HKUST-GZ teaching building. The form is minimal, white, and bright. The spatial language conveys "<strong>the restrained aesthetic of the Hong Kong main campus</strong>" rather than the grand symbolism often seen on new mainland campuses.</figcaption>
+      </figure>
+      <figure>
+        <img src="report_images/09_hkustgz_courtyard.jpg" alt="HKUST-GZ courtyard">
+        <figcaption>Looking down on the <strong>courtyard garden</strong> from a second-floor corridor. Green space and walkways are preserved between building clusters, continuing the HKUST main campus idea of "<strong>the campus as a space for conversation</strong>."</figcaption>
+      </figure>
+    </div>
+
+    <h3 class="subsection">2. The Six-Tier Incubation Structure: A Funnel from 1,700 to 14</h3>
+    <p>This is the part of the trip I personally felt <strong>most worth recording</strong>: the six-tier business incubation funnel that HKUST-GZ has formed together with the Hong Kong main campus. The structure has stabilized only after <strong>34 years of continuous evolution</strong>.</p>
+
+    <div class="pyramid">
+      <div class="pyramid-row l1">
+        <div class="level">LEVEL 1 · LISTED</div>
+        <div class="count">14</div>
+        <div class="desc">Formed through tech-academic conversion; IPO completed</div>
+      </div>
+      <div class="pyramid-row l2">
+        <div class="level">LEVEL 2 · UNICORN</div>
+        <div class="count">10</div>
+        <div class="desc">Including <strong>DJI</strong> and other leading firms</div>
+      </div>
+      <div class="pyramid-row l3">
+        <div class="level">LEVEL 3 · PRE-UNICORN (Incubation Pool)</div>
+        <div class="count">10</div>
+        <div class="desc">Highly promising; composed of researchers and engineers</div>
+      </div>
+      <div class="pyramid-row l4">
+        <div class="level">LEVEL 4 · EARLY-STAGE</div>
+        <div class="count">~70</div>
+        <div class="desc">Below pre-unicorn level, at early stage</div>
+      </div>
+      <div class="pyramid-row l5">
+        <div class="level">LEVEL 5 · PROJECT POOL (Dynamic)</div>
+        <div class="count">1,700</div>
+        <div class="desc">Earliest stage; admitted via student-faculty submissions; annual turnover</div>
+      </div>
+    </div>
+
+    <p>The most consequential design choice in this structure is <strong>dynamic flow</strong>: among the 1,700 early-stage projects, those unable to compete or that lose their potential are dropped, and outstanding projects ascend tier by tier into the narrow channel of 70, 10, 10, and 14. <strong>Every tier is a continuously refreshed living ecosystem rather than a static archive.</strong></p>
+
+    <div class="pullquote">
+      Their entire university, counted from Hong Kong through to today, amounts to 34 years in total — and on that side, they place real weight on commercialization. So the ultimate aim of this research is commercialization. It implements relatively easily, and the whole orientation is value-driven.
+      <span class="attr">— HKUST-GZ collaborating researcher</span>
+    </div>
+
+    <h3 class="subsection">3. The Red Bird Program: Dropping Graduate Students into Real Business Problems</h3>
+    <p>Beyond the six-tier structure, HKUST-GZ runs an independent initiative called the <strong>Red Bird Program</strong>, another design I find well worth bringing back to Tsukuba for further thought:</p>
+
+    <div class="keypoints">
+      <div class="kp">
+        <div class="kp-title">Target participants</div>
+        <div class="kp-body">Graduate students, organized into <strong>cross-disciplinary</strong> teams, who must aspire for their research to carry commercial value.</div>
+      </div>
+      <div class="kp">
+        <div class="kp-title">Problem sources</div>
+        <div class="kp-body">Driven directly by <strong>real business problems</strong>; the teaching process uses companies' actual challenges as case studies.</div>
+      </div>
+      <div class="kp">
+        <div class="kp-title">Physical infrastructure</div>
+        <div class="kp-body">Purpose-built experimental facilities have already been constructed, including <strong>pools for simulating biomimetic fish swimming</strong> and <strong>low-altitude flight testing spaces</strong>.</div>
+      </div>
+      <div class="kp">
+        <div class="kp-title">Key design</div>
+        <div class="kp-body">Students develop <strong>problem-solving skills "directly convertible into hands-on experience for future work"</strong> rather than skills that remain abstract and detached from real society.</div>
+      </div>
+    </div>
+
+    <p>This pattern of "<strong>bidirectional flow between school and industry</strong>" — where students raise the competitiveness of companies through their research outputs while companies train students through real problems — creates HKUST-GZ's distinctive virtuous cycle.</p>
+
+    <figure>
+      <img src="report_images/10_hkustgz_material_ai_lab.jpg" alt="Materials AI lab corridor">
+      <figcaption>A corridor of the "<strong>materials AI lab</strong>" on the HKUST-GZ campus. The signage reveals the new campus's logic for organizing research directions: every corridor carries an interdisciplinary naming pair such as "materials and AI" rather than the conventional "X School."</figcaption>
+    </figure>
+
+    <h3 class="subsection">4. Collaborator Prof. Zhou Qiushi: A Corner for the Philosophy of Technology</h3>
+    <p>My host, <strong>Prof. Zhou Qiushi</strong>, works on the philosophy of technology. His most memorable advice concerned <strong>diversifying research outputs</strong>: the same research outcome can be written up as a paper and at the same time <strong>converted into an artistic work</strong>, raising the output efficiency and social reach of a single research project. This resonated with my own intention to express research and art in tandem within the Cultural Fidelity Agent project.</p>
+  </div>
+</section>
+
+<!-- DAY 3: YU CHUN -->
+<section class="block" id="yuchun">
+  <div class="section-eyebrow">Day 3 · HKUST-GZ Auditorium</div>
+  <h2 class="section-title">Yu Chun's Keynote: "A Causal Perspective on Human-Computer Interaction in the LLM Era"</h2>
+  <p class="section-lead">This was the <strong>densest session of the three days, and the one with the largest impact on my own research framework</strong>. Professor Yu Chun of the Department of Computer Science at Tsinghua University compressed twenty years of research into a single unifying keyword, "<strong>causality</strong>," and used it to redefine "<strong>what HCI should be doing in the era of large language models</strong>."</p>
+
+  <div class="visit-card">
+    <div class="uni-meta">
+      <span class="uni-name">Yu Chun</span>
+      <span class="uni-tag">Tsinghua University, Department of Computer Science</span>
+      <span class="uni-tag hci">HCI</span>
+      <span class="uni-tag philosophy">Causal Framework</span>
+    </div>
+
+    <figure>
+      <img src="report_images/11_yuchun_title_slide.jpg" alt="Yu Chun title slide">
+      <figcaption>The title of the keynote: "<strong>A Causal Perspective on Human-Computer Interaction in the LLM Era: From Interactive Learning to the Human World Model</strong>." Professor Yu Chun, Department of Computer Science, Tsinghua University, May 29, 2026. A curved projection screen in a dim auditorium constitutes the standard HKUST-GZ talk setting.</figcaption>
+    </figure>
+
+    <h3 class="subsection">1. Twenty Years of Research, Distilled: From "Natural Interaction" to "Causality"</h3>
+    <p>Professor Yu opened by recounting his research arc: <strong>completing his Tsinghua PhD in 2006, twenty years ago</strong>. He admitted that in his first PhD year he was still building laser-pointer recognition on FPGA boards (image processing), and only <strong>in his fourth year did he fully grasp what HCI was really about</strong>. During an internship at MSRA, his mentor BGP inspired him with the following:</p>
+
+    <div class="pullquote">
+      We will certainly become World No.1 at this — because in HCI we are <strong>defining</strong> a problem that no one has worked on before. We are the first to take it on, and we therefore carry the responsibility of making it World No.1 in the present moment.
+      <span class="attr">— Yu Chun, quoting his mentor BGP (University of Toronto)</span>
+    </div>
+
+    <h3 class="subsection">2. The VSC Inference Framework: Intent → Behavior → Data</h3>
+    <p>Professor Yu summarized the research paradigm of his past years: a unified framework using <strong>Bayesian inference</strong> to address intent understanding in HCI.</p>
+
+    <div class="svg-flow">
+      <div class="svg-flow-title">Yu Chun's HCI Causal Inference Framework (VSC / Bayesian Inference)</div>
+      <svg viewBox="0 0 900 200" xmlns="http://www.w3.org/2000/svg" role="img">
+        <defs>
+          <marker id="arrA" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto">
+            <path d="M0,0 L10,5 L0,10 z" fill="#c97b5a"/>
+          </marker>
+          <marker id="arrAback" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto">
+            <path d="M0,0 L10,5 L0,10 z" fill="#7a8b6f"/>
+          </marker>
+        </defs>
+        <g font-family="PingFang SC, Songti SC, sans-serif" font-size="13">
+          <g><rect x="20" y="70" width="160" height="70" rx="10" fill="#fff" stroke="#1a2a3a" stroke-width="2"/><text x="100" y="95" text-anchor="middle" fill="#c97b5a" font-size="11" letter-spacing="3">CAUSE</text><text x="100" y="118" text-anchor="middle" fill="#1a2a3a" font-weight="700" font-size="15">User Intent</text><text x="100" y="135" text-anchor="middle" fill="#4a4a4a" font-size="11">Intent</text></g>
+          <line x1="185" y1="105" x2="220" y2="105" stroke="#c97b5a" stroke-width="2.5" marker-end="url(#arrA)"/>
+          <g><rect x="225" y="70" width="160" height="70" rx="10" fill="#fff" stroke="#1a2a3a" stroke-width="2"/><text x="305" y="95" text-anchor="middle" fill="#c97b5a" font-size="11" letter-spacing="3">INTERMEDIATE</text><text x="305" y="118" text-anchor="middle" fill="#1a2a3a" font-weight="700" font-size="15">Interaction Behavior</text><text x="305" y="135" text-anchor="middle" fill="#4a4a4a" font-size="11">Action (gesture / voice / click)</text></g>
+          <line x1="390" y1="105" x2="425" y2="105" stroke="#c97b5a" stroke-width="2.5" marker-end="url(#arrA)"/>
+          <g><rect x="430" y="70" width="160" height="70" rx="10" fill="#fff" stroke="#1a2a3a" stroke-width="2"/><text x="510" y="95" text-anchor="middle" fill="#c97b5a" font-size="11" letter-spacing="3">EFFECT</text><text x="510" y="118" text-anchor="middle" fill="#1a2a3a" font-weight="700" font-size="15">Sensor Observation</text><text x="510" y="135" text-anchor="middle" fill="#4a4a4a" font-size="11">Raw Data</text></g>
+          <line x1="595" y1="105" x2="630" y2="105" stroke="#c97b5a" stroke-width="2.5" marker-end="url(#arrA)"/>
+          <g><rect x="640" y="55" width="240" height="100" rx="10" fill="#1a2a3a" stroke="#1a2a3a" stroke-width="2"/><text x="760" y="85" text-anchor="middle" fill="#c9a96b" font-size="11" letter-spacing="3">INVERSE INFERENCE</text><text x="760" y="110" text-anchor="middle" fill="#fff" font-weight="700" font-size="15">Inverse inference of user intent</text><text x="760" y="130" text-anchor="middle" fill="rgba(255,255,255,.75)" font-size="11">Based on priors (gesture habits / user preferences)</text><text x="760" y="146" text-anchor="middle" fill="rgba(255,255,255,.6)" font-size="11">P(Intent | Data) ∝ P(Data | Intent) · P(Intent)</text></g>
+          <path d="M 760,160 Q 760,180 100,180 Q 60,180 60,150" fill="none" stroke="#7a8b6f" stroke-width="1.5" stroke-dasharray="5,4" marker-end="url(#arrAback)"/>
+          <text x="430" y="195" text-anchor="middle" fill="#5a6e4f" font-size="11" font-style="italic">From effect to cause: the real HCI problem is inverse inference</text>
+        </g>
+      </svg>
+      <div class="svg-legend"><strong>Explanation:</strong> Yu Chun views the core problem of HCI as one of "<strong>going from effect to cause</strong>." Human intent (the cause) passes through interaction behavior (the intermediate) and becomes sensor-observable data (the effect); the task of an HCI system is to <strong>infer back from effect to cause</strong>. Once user priors (gesture habits, operational preferences) are introduced, the inference problem is effectively "<strong>half solved</strong>." This is a form of <strong>Bayesian causal inference</strong>.</div>
+    </div>
+
+    <h3 class="subsection">3. The LLM Era: HCI Leaping from Low-Level to High-Level</h3>
+    <p>Professor Yu pointed out that before large language models, HCI operated at <strong>"low-level semantics"</strong>: gesture recognition, touch recognition, speech recognition, and the like. After the rise of large language models, the level at which HCI operates has shifted.</p>
+
+    <div class="keypoints">
+      <div class="kp">
+        <div class="kp-title">The GPT era</div>
+        <div class="kp-body">Users had to write input in very formal formats for the system to work, and adoption was small.</div>
+      </div>
+      <div class="kp">
+        <div class="kp-title">The ChatGPT era</div>
+        <div class="kp-body">A dramatic upgrade in interactive capability. The explosion to "<strong>one hundred million users in a month</strong>" was achieved by AI and HCI together.</div>
+      </div>
+      <div class="kp">
+        <div class="kp-title">The Agent era</div>
+        <div class="kp-body">Agents plan and schedule autonomously, and HCI enters the era of "<strong>thought-level interaction</strong>."</div>
+      </div>
+      <div class="kp">
+        <div class="kp-title">The Claude Code era</div>
+        <div class="kp-body">Harness systems, comprising base documentation, source, and self-improvement, represent not the capability of the large language model itself but the evolution of "<strong>how people use it</strong>."</div>
+      </div>
+    </div>
+
+    <figure>
+      <img src="report_images/12_yuchun_agent_causality.jpg" alt="Agent causal learning">
+      <figcaption>A central slide: <strong>"Agent mechanisms and causality: why interaction with humans matters."</strong> The left side shows the "<strong>correlation</strong>" path of LLM pretraining (co-occurrence in corpora, pattern matching, next-token prediction). The right side shows a "<strong>causal learning loop</strong>" in which an Agent moves through context C, action A, result R, user judgment J, retrospection, and renewed action, supported by a Harness for organizing action and intervention and by Memory for retaining results and preferences. The slide gives a clear schematic of <strong>grafting the "feedback loop" of HCI onto LLM Agents</strong>.</figcaption>
+    </figure>
+
+    <h3 class="subsection">4. Interactive Learning versus RLHF</h3>
+    <p>The "<strong>Interactive Learning</strong>" approach advanced by Professor Yu's team appears, in his view, closer to the future than RLHF: RLHF demands large-scale offline data processing and learning, while interactive learning <strong>can perform online learning for every end user</strong>. He drew the contrast through four properties:</p>
+
+    <div class="keypoints">
+      <div class="kp"><div class="kp-title">1. Source of learning</div><div class="kp-body">The signal comes directly from the user's <strong>interaction behavior</strong> rather than from pre-annotated offline datasets.</div></div>
+      <div class="kp"><div class="kp-title">2. Online versus offline</div><div class="kp-body">Learning is <strong>online</strong>, evolving in step with the user in real time.</div></div>
+      <div class="kp"><div class="kp-title">3. Human-in-the-loop</div><div class="kp-body">The human remains part of the closed loop at all times.</div></div>
+      <div class="kp"><div class="kp-title">4. Open-ended tasks</div><div class="kp-body">The framework can handle <strong>open-ended tasks</strong>, not confined to predefined scenarios.</div></div>
+    </div>
+
+    <h3 class="subsection">5. Case 1 · OpenCD: Cognitive Diagnosis in Education</h3>
+    <p>Yu Chun's team has published <strong>OpenCD (Open-Ended Cognitive Diagnosis)</strong> in the IoT venue as a concrete application of the causal framework. The system models the mathematical cognitive abilities of first and second graders, using open-ended multimodal tasks that let children simultaneously express "How can you show 46?" across three channels — <strong>objects, strokes, and speech</strong> — and uses OpenCD to infer each student's <strong>Cognitive Diagnostic Graph</strong> across Ordinality, Numerals, Grouping, Cardinality, Combination, and Unitizing.</p>
+
+    <figure>
+      <img src="report_images/13_yuchun_opencd.jpg" alt="OpenCD educational cognitive diagnosis">
+      <figcaption><strong>OpenCD</strong>: inferring back from the child's "<strong>effect</strong>" (the writing, drawing, and spoken process) to their "<strong>cause</strong>" (the construction of the cognitive scaffolding). The left side shows the open-ended multimodal tasks, and the right side shows the cognitive diagnostic graph together with a teaching recommendation report. Yu Chun remarked: "When I saw this data I told my student that this work should get accepted, because <strong>every child's cognitive process while understanding four-six-and-ten</strong>, through this multimodal expression, was surprisingly all brought to the surface."</figcaption>
+    </figure>
+
+    <h3 class="subsection">6. The Human World Model (HWM)</h3>
+    <p>The <strong>Human World Model, HWM</strong>, proposed by Yu Chun's team is the most ambitious idea of the keynote and the one that excited me most. It differs from the "world model" of Yann LeCun and Fei-Fei Li:</p>
+
+    <div class="pullquote">
+      The objective world is the world model others speak of, but for each individual, their world is <strong>subjective</strong>. I genuinely do not care what the materials beside me look like. For the user themself, their subjective world is larger than the objective world.
+      <span class="attr">— Yu Chun</span>
+    </div>
+
+    <div class="svg-flow">
+      <div class="svg-flow-title">Human World Model · HWM = 𝒢(E, T, B, P, C) · Five-Dimensional Causal Network</div>
+      <svg viewBox="0 0 900 280" xmlns="http://www.w3.org/2000/svg" role="img">
+        <g font-family="PingFang SC, Songti SC, sans-serif" font-size="13">
+          <circle cx="450" cy="140" r="55" fill="#1a2a3a" stroke="#c9a96b" stroke-width="2"/>
+          <text x="450" y="135" text-anchor="middle" fill="#c9a96b" font-size="14" font-weight="700">HWM</text>
+          <text x="450" y="155" text-anchor="middle" fill="rgba(255,255,255,.7)" font-size="11">Human World Model</text>
+
+          <g>
+            <circle cx="180" cy="60" r="48" fill="#fff" stroke="#c97b5a" stroke-width="2"/>
+            <text x="180" y="55" text-anchor="middle" fill="#c97b5a" font-size="10" letter-spacing="2">E</text>
+            <text x="180" y="73" text-anchor="middle" fill="#1a2a3a" font-weight="700" font-size="12">Physical Env.</text>
+            <text x="180" y="89" text-anchor="middle" fill="#4a4a4a" font-size="10">Physical Env.</text>
+            <line x1="218" y1="92" x2="402" y2="125" stroke="#c97b5a" stroke-width="1.5" stroke-dasharray="3,3"/>
+          </g>
+          <g>
+            <circle cx="180" cy="220" r="48" fill="#fff" stroke="#c97b5a" stroke-width="2"/>
+            <text x="180" y="215" text-anchor="middle" fill="#c97b5a" font-size="10" letter-spacing="2">T</text>
+            <text x="180" y="233" text-anchor="middle" fill="#1a2a3a" font-weight="700" font-size="12">Task Goals</text>
+            <text x="180" y="249" text-anchor="middle" fill="#4a4a4a" font-size="10">Task Goals</text>
+            <line x1="218" y1="188" x2="402" y2="155" stroke="#c97b5a" stroke-width="1.5" stroke-dasharray="3,3"/>
+          </g>
+          <g>
+            <circle cx="450" cy="245" r="48" fill="#fff" stroke="#c97b5a" stroke-width="2"/>
+            <text x="450" y="240" text-anchor="middle" fill="#c97b5a" font-size="10" letter-spacing="2">B</text>
+            <text x="450" y="258" text-anchor="middle" fill="#1a2a3a" font-weight="700" font-size="12">Behavior</text>
+            <text x="450" y="274" text-anchor="middle" fill="#4a4a4a" font-size="10">Behavior</text>
+            <line x1="450" y1="197" x2="450" y2="197" stroke="#c97b5a" stroke-width="1.5" stroke-dasharray="3,3"/>
+            <line x1="450" y1="197" x2="450" y2="197" stroke="#c97b5a" stroke-width="1.5"/>
+            <line x1="450" y1="195" x2="450" y2="197" stroke="#c97b5a" stroke-width="1.5"/>
+          </g>
+          <g>
+            <circle cx="720" cy="60" r="48" fill="#fff" stroke="#c97b5a" stroke-width="2"/>
+            <text x="720" y="55" text-anchor="middle" fill="#c97b5a" font-size="10" letter-spacing="2">C</text>
+            <text x="720" y="73" text-anchor="middle" fill="#1a2a3a" font-weight="700" font-size="12">Cognitive State</text>
+            <text x="720" y="89" text-anchor="middle" fill="#4a4a4a" font-size="10">Cognitive State</text>
+            <line x1="682" y1="92" x2="498" y2="125" stroke="#c97b5a" stroke-width="1.5" stroke-dasharray="3,3"/>
+          </g>
+          <g>
+            <circle cx="720" cy="220" r="48" fill="#fff" stroke="#c97b5a" stroke-width="2"/>
+            <text x="720" y="215" text-anchor="middle" fill="#c97b5a" font-size="10" letter-spacing="2">P</text>
+            <text x="720" y="233" text-anchor="middle" fill="#1a2a3a" font-weight="700" font-size="12">Physiological</text>
+            <text x="720" y="249" text-anchor="middle" fill="#4a4a4a" font-size="10">Physiological</text>
+            <line x1="682" y1="188" x2="498" y2="155" stroke="#c97b5a" stroke-width="1.5" stroke-dasharray="3,3"/>
+          </g>
+          <line x1="225" y1="80" x2="675" y2="80" stroke="#7a8b6f" stroke-width="1" stroke-dasharray="2,3" opacity="0.4"/>
+          <line x1="225" y1="200" x2="675" y2="200" stroke="#7a8b6f" stroke-width="1" stroke-dasharray="2,3" opacity="0.4"/>
+        </g>
+      </svg>
+      <div class="svg-legend"><strong>Explanation:</strong> HWM is not merely <strong>a collection of five dimensions</strong>; it is a mapping of <strong>causal relations among those dimensions</strong>, capturing the <strong>representation and inference of interaction semantics</strong>. Yu Chun emphasized: "No matter how many relations you build, if the user cannot feel the value, none of it matters." HWM should therefore be constructed by a method driven by "<strong>service to the user and value to the user</strong>."</div>
+    </div>
+
+    <figure>
+      <img src="report_images/14_yuchun_hwm.jpg" alt="HWM slide">
+      <figcaption>Yu Chun's original HWM slide: <strong>HWM = 𝒢(E, T, B, P, C)</strong>, a "<strong>causal network</strong>." Each link between dimensions represents a causal relation. For instance, "why am I standing here giving this talk right now," traced from "I know Prof. Tong, who scheduled this seminar, and so I arrived," carries clear causes and consequences. The ultimate aim of HWM is to reconstruct all such causal relations.</figcaption>
+    </figure>
+
+    <h3 class="subsection">7. Two Hardware Devices: A Seven-Camera Helmet and a Smart Ring</h3>
+    <p>HWM is not only a software-layer proposal. Yu Chun's team has built two "<strong>painstakingly selected</strong>" hardware devices in parallel:</p>
+
+    <div class="keypoints">
+      <div class="kp">
+        <div class="kp-title">Seven-camera helmet (2B)</div>
+        <div class="kp-body">Five outward-facing cameras (left, right, rear, front-left, and front-right), two inward-facing cameras (eyes plus face/mouth), and one camera looking down at the body. Together they can recover what a person is doing on a near-millisecond timescale. The device supports research on social behavior, facial expression, body posture, and gaze.</div>
+      </div>
+      <div class="kp">
+        <div class="kp-title">Smart Ring (2C)</div>
+        <div class="kp-body">An IMU (accelerometer and gyroscope) and a microphone. The device recognizes fine-grained finger operations, achieving <strong>96% accuracy on 46 gestures</strong> and beating the Meta Neuro Band (which depends on EMG) on Samsung's benchmark. A consumer-grade product will launch in the second half of this year.</div>
+      </div>
+    </div>
+
+    <div class="figure-row">
+      <figure>
+        <img src="report_images/15_yuchun_gaze_attention.jpg" alt="Gaze and attention">
+        <figcaption><strong>The key to interactive learning: human attention.</strong> In industrial scenes with many similar objects, where it is difficult to describe a target object verbally (for example, "<strong>record the state of this valve</strong>"), <strong>gaze localization</strong> can be used to precisely select the target, simplifying robot operation. This is an industrial application of the "behavior to intent" inverse inference within HWM.</figcaption>
+      </figure>
+      <figure>
+        <img src="report_images/17_yuchun_smart_ring.jpg" alt="Smart Ring demo">
+        <figcaption><strong>Capability demonstration of the Smart Ring.</strong> Four interaction modalities are supported simultaneously: mid-air gesture control, micro-gesture control, two-dimensional surface touch, and mid-air pointing. The Meta Neuro Band largely supports four-direction gestures (up, down, left, and right), whereas the Smart Ring already handles more complex gestures, including "<strong>tracing a V in the air</strong>."</figcaption>
+      </figure>
+    </div>
+
+    <figure>
+      <img src="report_images/16_yuchun_gazecot.jpg" alt="GazeCoT CHI 2026">
+      <figcaption><strong>GazeCoT: Unleashing Social Intelligence in Multimodal LLMs With Gaze-Informed Chain-of-Thought Reasoning</strong> (CHI 2026). After integrating gaze information into Chain-of-Thought reasoning, <strong>GPT-4.1, GPT-4.1 Mini, GPT-5, and Qwen 2.5 VL</strong> all outperformed baselines on gaze-target inference and social intelligence tasks (with an average gain of about 30%) and on some tasks even <strong>surpassed human witnesses</strong>.</figcaption>
+    </figure>
+
+    <h3 class="subsection">8. Octopus: A System for Recording a User's Day</h3>
+    <p>Yu Chun's team is internally using a system called <strong>Octopus</strong> that records approximately <strong>17 hours per day</strong> (excluding seven hours of sleep). It captures phone audio data (kept on-device only, never uploaded to the cloud) and PC Desktop Activity Recognition. From these raw streams the system extracts intermediate variables such as <strong>"personality, what one cares about, and preferences"</strong> for downstream services to consume.</p>
+
+    <p>The team plans to adopt a Harness paradigm rather than fully autonomous Agent execution, with <strong>the human also considered inside the Harness</strong>: "<strong>building interactive learning into the Harness itself.</strong>" A usable form is expected to be released within this year.</p>
+
+    <h3 class="subsection">9. Closing Methodological Advice: A Seven-Day Iteration Cycle</h3>
+    <p>Yu Chun's final slide offered methodological advice for students that was aggressive but also sincere:</p>
+
+    <div class="pullquote">
+      Do what you care about most. Effort alone is not enough, because AI is too strong. You have to be working on <strong>the thing you find most interesting</strong> to develop the acuity that lets you see your problem.
+      <span class="attr">— Yu Chun</span>
+    </div>
+
+    <div class="keypoints">
+      <div class="kp"><div class="kp-title">Days 1–3</div><div class="kp-body">Use web coding to rapidly build a tool prototype, then use it yourself every day and gather your own feedback.</div></div>
+      <div class="kp"><div class="kp-title">Days 4–7</div><div class="kp-body">Iterate toward near-perfection. Members of the same group begin to use it and will offer feedback you would not have anticipated.</div></div>
+      <div class="kp"><div class="kp-title">Days 8–30</div><div class="kp-body">Release it on a small service marketplace and let 100 people use it. Once real data is in hand, drafting the initial paper takes only a single prompt to an Agent.</div></div>
+      <div class="kp"><div class="kp-title">Up-front constraint</div><div class="kp-body">Work on something that has <strong>"not yet been done"</strong>. So long as it has genuinely not been done, there is a high probability that an innovation sits behind it. No protracted literature review is required, at most one day.</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- REFLECTION -->
+<section class="block" id="reflection">
+  <div class="section-eyebrow">My Reflection</div>
+  <h2 class="section-title">My Reflection: Five Contrasts and a Self-Audit by an HCI Researcher</h2>
+  <p class="section-lead">After three days of observation, several contrasts kept resurfacing in my mind. As an HCI and digital exhibition researcher based at Tsukuba, this visit gave my own research framework a substantial jolt, especially through Professor Yu Chun's causal perspective.</p>
+
+  <div class="insight-card">
+    <div class="label">REFLECTION · 1</div>
+    <h3>"Change" versus "Accumulation": Shenzhen's Speed and Guangzhou's Depth</h3>
+    <div class="compare">
+      <div>
+        <h4>SUSTECH · CHANGE</h4>
+        <p>SUSTech sits in a period of rapid transformation driven by Shenzhen's policy direction. The originally planned School of Design was adjusted in response to policy shifts. Faculty are highly internationalized, the student-to-faculty ratio is small, and curriculum reform moves quickly. The cost, however, is that <strong>structures are unstable and long-term plans are hard to land</strong>, leaving comprehensive directions such as HCI especially disadvantaged when applying for national-level grants.</p>
+      </div>
+      <div>
+        <h4>HKUST-GZ · ACCUMULATION</h4>
+        <p>Although the HKUST-GZ campus is new (about three years old), it inherits <strong>34 years</strong> of academic-to-commercial conversion heritage from the Hong Kong main campus. Its six-tier incubation structure, the Red Bird Program, and its value-oriented culture are all "<strong>bought with time</strong>." The new campus simply transplants mature genes into Guangzhou's soil.</p>
+      </div>
+    </div>
+    <p style="margin-top:20px;">Neither model is perfect. SUSTech's "change" may generate genuinely original research, while HKUST-GZ's "accumulation" secures a high rate of industrial implementation. For my own research direction in HCI and cultural experience, the implication is this: <strong>"rapid change" is both an opportunity and a risk for an individual researcher</strong>. One either finds an environment of SUSTech's risk-bearing kind, or chooses a mature conversion funnel of the HKUST-GZ kind. Having both at once is hard.</p>
+  </div>
+
+  <div class="insight-card">
+    <div class="label">REFLECTION · 2</div>
+    <h3>The Real Challenge of HCI Commercialization: Evaluation Systems Built Around Foundational Disciplines</h3>
+    <p>Prof. Li Xueliang's line — "<strong>comprehensive, interdisciplinary research is evaluated under the foundational-discipline framework, and the challenge is substantial</strong>" — was the moment of the trip that confronted me most directly. HCI still occupies a <strong>marginal position</strong> within the Chinese academic system. It is neither the mainstream computer science of algorithms and systems, nor a pure humanities field of design and aesthetics, and <strong>evaluation systems on either side struggle to "score" it</strong>.</p>
+    <p>Prof. Sun Wu (from Korea) at SUSTech has navigated this well by leveraging his <strong>alumni elite network</strong> to connect his research directly to American companies. This is a case of "<strong>individual networks compensating for structural deficiencies</strong>" — feasible for some people, but not a general solution.</p>
+  </div>
+
+  <div class="insight-card">
+    <div class="label">REFLECTION · 3</div>
+    <h3>HKUST-GZ's Six-Tier Funnel is a Disassemblable, Learnable "Research-to-Business" Pipeline</h3>
+    <p>The structure of 1,700 projects narrowing to 70 early-stage firms, then 10 pre-unicorns, 10 unicorns, and 14 listed companies, is striking less for its numbers than for its <strong>dynamic flow</strong>. Each tier is not a static archive but is refreshed every year. Behind it lies a "<strong>fault-tolerant ecosystem</strong>": large numbers of projects are allowed to fail and to be naturally eliminated, while a small number of successful projects ascend tier by tier.</p>
+    <p>By contrast, Tsukuba (and most mainland universities) tend toward "<strong>every project must succeed</strong>" in research evaluation, which pushes researchers toward conservatism and away from high-risk, high-reward research. <strong>HKUST-GZ's combination of a high failure rate with a strong incubation structure may be the genuine route to producing unicorns at scale.</strong> This is one observation I will bring back to share with the faculty and students of my own lab.</p>
+  </div>
+
+  <div class="insight-card">
+    <div class="label">REFLECTION · 4</div>
+    <h3>Yu Chun's "Causal" Framework is a Self-Redefinition of HCI in the LLM Era</h3>
+    <p>In my own work on HCI, digital exhibition, and cultural experience, I have spent recent years chasing the capabilities of large language models without often pausing to ask, "<strong>What is HCI's distinctive value in the LLM era?</strong>" Professor Yu Chun's answer was deeply instructive.</p>
+    <p><strong>"Interaction is intrinsically temporal. The behavior of one moment determines the phenomena of the next. Interaction naturally carries causal information."</strong> This implies that HCI is not a "<strong>decorative wrapper</strong>" around large language models, but rather <strong>a critical channel for supplying causal capacity to those models</strong> — using the user's interaction data to construct the inverse path from effect back to cause.</p>
+    <p>This gives my Cultural Fidelity Agent project a fresh angle: the core of CFA should not merely be "<strong>output evaluation</strong>." It should construct a closed loop of "<strong>Human World Model plus interactive learning</strong>," in which the Agent gradually learns the causal judgment of "what counts as cultural authenticity" through interaction with cultural experts.</p>
+  </div>
+
+  <div class="insight-card">
+    <div class="label">REFLECTION · 5</div>
+    <h3>Prof. Zhou Qiushi's Suggestion: Simultaneously Render Research as Artistic Work</h3>
+    <p>Prof. Zhou Qiushi's parting suggestion at HKUST-GZ seemed simple: "<strong>The same research outcome can be written up as a paper and at the same time converted into an artistic work.</strong>" Yet it was a line of thought I had not seriously considered before.</p>
+    <p>For a researcher working in <strong>digital exhibition and cultural experience</strong>, this fit is almost native: my research subject already lives along the boundary of art and culture. Releasing a single research project as paper, artwork, and workshop demo at once allows my output to be read by <strong>academic, artistic, and public audiences</strong> simultaneously. This resonates with Yu Chun's claim that "<strong>everyone has to work on what brings them the greatest happiness</strong>," because for a researcher, "greatest happiness" may be exactly what multi-channel output makes possible.</p>
+  </div>
+
+  <div class="visit-card" style="background: var(--cream);">
+    <h3 class="subsection" style="margin-top: 0;">Back to My Own Research: Four Takeaways</h3>
+    <ol style="padding-left: 26px; font-size: 16px; line-height: 1.85; color: var(--ink);">
+      <li style="margin-bottom: 14px;"><strong>Adopt "causality" as the central framework of the CFA project.</strong> Yu Chun's triad of "from effect to cause, Human World Model, and interactive learning" can transfer directly into the research architecture for evaluating cultural authenticity, allowing the CFA Agent to learn the causal judgment of "what counts as cultural authenticity" through dialogue with cultural experts.</li>
+      <li style="margin-bottom: 14px;"><strong>Diversify research outputs across multiple channels.</strong> Following Prof. Zhou Qiushi's suggestion, the same research outcome can be released as a paper, an artistic work, and a public workshop demo, raising the "<strong>output coefficient</strong>" of a single research project.</li>
+      <li style="margin-bottom: 14px;"><strong>Adopt Yu Chun's seven-day iteration cadence for small-tool experiments.</strong> Use web coding to rapidly build a prototype, deploy it to myself, then the lab, then 100 users, and let <strong>real usage data</strong> define the research question rather than mining problems out of paper reviews.</li>
+      <li><strong>Continue to observe the HKUST-GZ incubation funnel.</strong> It is a "<strong>fault-tolerant ecosystem</strong>" of clear structural relevance to anyone considering future academic-to-commercial conversion, including the commercialization of CFA.</li>
+    </ol>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section class="block" id="gallery">
+  <div class="section-eyebrow">Photo Gallery</div>
+  <h2 class="section-title">Photo Log: Three Days of Working Visual Records</h2>
+  <p class="section-lead">From the open campus of SUSTech to the spiral staircase of HKUST-GZ, and on to the curved projection screen of Professor Yu Chun's auditorium, these photos are arranged along the visit route.</p>
+
+  <div class="gallery">
+    <figure><img src="report_images/01_sustech_lobby.jpg" alt=""><figcaption>D1 · SUSTech open lobby</figcaption></figure>
+    <figure><img src="report_images/02_sustech_design_posters.jpg" alt=""><figcaption>D1 · School of Design poster wall</figcaption></figure>
+    <figure><img src="report_images/03_sustech_design_lab.jpg" alt=""><figcaption>D1 · School of Design workspace</figcaption></figure>
+    <figure><img src="report_images/04_sustech_projecta_poster.jpg" alt=""><figcaption>D1 · ProjecTA CHI 2026</figcaption></figure>
+    <figure><img src="report_images/05_sustech_maker_lab.jpg" alt=""><figcaption>D1 · Prototype fabrication space</figcaption></figure>
+    <figure><img src="report_images/06_sustech_design_products.jpg" alt=""><figcaption>D1 · Design product showcase</figcaption></figure>
+    <figure><img src="report_images/07_sustech_campus_tree.jpg" alt=""><figcaption>D1 · The campus banyan tree</figcaption></figure>
+    <figure><img src="report_images/08_hkustgz_staircase.jpg" alt=""><figcaption>D2 · HKUST-GZ spiral staircase</figcaption></figure>
+    <figure><img src="report_images/09_hkustgz_courtyard.jpg" alt=""><figcaption>D2 · HKUST-GZ courtyard</figcaption></figure>
+    <figure><img src="report_images/10_hkustgz_material_ai_lab.jpg" alt=""><figcaption>D2 · Materials AI lab</figcaption></figure>
+    <figure><img src="report_images/11_yuchun_title_slide.jpg" alt=""><figcaption>D3 · Yu Chun's title slide</figcaption></figure>
+    <figure><img src="report_images/12_yuchun_agent_causality.jpg" alt=""><figcaption>D3 · Agent and causal mechanism</figcaption></figure>
+    <figure><img src="report_images/13_yuchun_opencd.jpg" alt=""><figcaption>D3 · OpenCD case</figcaption></figure>
+    <figure><img src="report_images/14_yuchun_hwm.jpg" alt=""><figcaption>D3 · Human World Model</figcaption></figure>
+    <figure><img src="report_images/15_yuchun_gaze_attention.jpg" alt=""><figcaption>D3 · Gaze and attention</figcaption></figure>
+    <figure><img src="report_images/16_yuchun_gazecot.jpg" alt=""><figcaption>D3 · GazeCoT CHI 2026</figcaption></figure>
+    <figure><img src="report_images/17_yuchun_smart_ring.jpg" alt=""><figcaption>D3 · Smart Ring demo</figcaption></figure>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="signature">Li Jingjing · University of Tsukuba SLIS · Digital Nature Group</div>
+  <div>Shenzhen and Guangzhou University Visits · May 27–29, 2026</div>
+</footer>
+
+</body>
+</html>

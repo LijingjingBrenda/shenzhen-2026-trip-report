@@ -51,7 +51,25 @@
     margin-bottom: 50px;
     line-height: 1.7;
   }
-  .picker { display: flex; flex-direction: column; gap: 14px; }
+  .report-section {
+    margin-bottom: 36px;
+    text-align: left;
+  }
+  .report-title {
+    font-family: "Songti SC", "YuMincho", Georgia, serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: #c9a96b;
+    margin-bottom: 6px;
+    letter-spacing: 0.05em;
+  }
+  .report-meta {
+    font-size: 13px;
+    color: rgba(255,255,255,.58);
+    margin-bottom: 16px;
+    line-height: 1.55;
+  }
+  .picker { display: flex; flex-direction: column; gap: 10px; }
   .picker a {
     display: flex;
     align-items: center;
@@ -110,23 +128,46 @@
 </head>
 <body>
   <div class="container">
-    <div class="eyebrow">Shenzhen · Dongguan · 2026</div>
-    <h1>科技、品牌与匠心<br>深圳·东莞企业访问总结</h1>
-    <p class="subtitle">2026 年 5 月 25–26 日 · STARLINK · Anker · Anycubic · Vivaia · 东莞工厂群<br>请选择语言进入报告</p>
+    <div class="eyebrow">Shenzhen · Dongguan · Guangzhou · 2026</div>
+    <h1>2026 春深 · 广东行<br>企业访问 &amp; 大学访问 两份报告</h1>
+    <p class="subtitle">2026 年 5 月 25–29 日 · 共 5 天 · 5 家企业 + 3 所大学 / 学者<br>请选择要查看的报告 + 语言</p>
 
-    <div class="picker">
-      <a href="Trip-Report-CN.html">
-        <div><div class="label">Chinese · Original</div><div class="lang">中　文</div></div>
-        <span class="arrow">→</span>
-      </a>
-      <a href="Trip-Report-JA.html">
-        <div><div class="label">Japanese · である調</div><div class="lang">日本語</div></div>
-        <span class="arrow">→</span>
-      </a>
-      <a href="Trip-Report-EN.html">
-        <div><div class="label">English · Professional</div><div class="lang">English</div></div>
-        <span class="arrow">→</span>
-      </a>
+    <div class="report-section">
+      <div class="report-title">① 企业访问报告 · Company Visits</div>
+      <div class="report-meta">2026.05.25–26 · 深圳南山 · 东莞 · STARLINK · Anker · Anycubic · Vivaia · 东莞工厂群</div>
+      <div class="picker">
+        <a href="Trip-Report-CN.html">
+          <div><div class="label">Chinese · Original</div><div class="lang">中　文</div></div>
+          <span class="arrow">→</span>
+        </a>
+        <a href="Trip-Report-JA.html">
+          <div><div class="label">Japanese · である調</div><div class="lang">日本語</div></div>
+          <span class="arrow">→</span>
+        </a>
+        <a href="Trip-Report-EN.html">
+          <div><div class="label">English · Professional</div><div class="lang">English</div></div>
+          <span class="arrow">→</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="report-section">
+      <div class="report-title">② 大学访问报告 · University Visits</div>
+      <div class="report-meta">2026.05.27–29 · 深圳 · 广州 · 南科大 · 港科广 · 清华喻纯教授专题报告</div>
+      <div class="picker">
+        <a href="university/University-Report-CN.html">
+          <div><div class="label">Chinese · Original</div><div class="lang">中　文</div></div>
+          <span class="arrow">→</span>
+        </a>
+        <a href="university/University-Report-JA.html">
+          <div><div class="label">Japanese · である調</div><div class="lang">日本語</div></div>
+          <span class="arrow">→</span>
+        </a>
+        <a href="university/University-Report-EN.html">
+          <div><div class="label">English · Professional</div><div class="lang">English</div></div>
+          <span class="arrow">→</span>
+        </a>
+      </div>
     </div>
 
     <div class="meta">
